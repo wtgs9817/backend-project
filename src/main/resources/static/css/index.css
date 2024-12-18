@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://korean.miceseoul.com/humanframe/theme/mice/assets/images/spot/img_spot_view01.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* GO 버튼 스타일 */
+.go-to-map-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #0078ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 50px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/*GO 버튼 마우스 올려놓을 때 스타일*/
+.go-to-map-btn:hover {
+    background-color: #005bb5;
+}
+
+/* 중앙 멘트 스타일 */
+.main-message {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    animation: slideIn 2s ease-out; /* 슬라이딩 애니메이션 */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* 슬라이딩 애니메이션 */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

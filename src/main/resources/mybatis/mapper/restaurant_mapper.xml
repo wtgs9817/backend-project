@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD MyBatis Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 연결하려는 mapper interface의 클래스명까지 써야함. -->
+<mapper namespace="tasteone.TasteOfSeoul.mapper.RestaurantMapper">
+
+<!--    private Integer id;-->
+<!--    private String restaurant; // 음식점-->
+<!--    private String address; // 주소-->
+<!--    private String foodCategory; // 음식카테고리-->
+<!--    private String latitude; //위도-->
+<!--    private String longitude;  //경도-->
+<!--    private String openTime; //오픈-->
+<!--    private String closeTime; //마감-->
+<!--    private String contact; //연락처-->
+
+    <!-- 음식점 이름으로 음식점 정보를 조회 -->
+    <select id="restaurantName" resultMap="restaurantMap">
+        select  * from restaurant where restaurantname = #{name} or restaurantname like concat('%', #{name}, '%') LIMIT 1
+    </select>
+
+    <select id="restaurantTotalCount" resultType="int">
+        SELECT count(*) FROM restaurant  R
+        <include refid="search" />
+    </select>
+
+    <sql id="search">
+        <where>
+            <if test="keyword != null and keyword != ''">
+                (restaurantname LIKE CONCAT('%', #{keyword}, '%')
+                OR address LIKE CONCAT('%', #{keyword}, '%'))
+            </if>
+            <if test="searchCategory != null and searchCategory != '' and searchCategory != 'all' ">
+                AND category = #{searchCategory}
+            </if>
+            <if test="searchAddress != null and searchAddress != ''">
+                AND address LIKE CONCAT('%', #{searchAddress}, '%')
+            </if>
+        </where>
+    </sql>
+
+
+    <select id="restaurantList" resultMap="restaurantMap">
+        SELECT
+            ROW_NUMBER() OVER (ORDER BY restaurantid) AS rownum,
+                R.*
+        FROM
+            restaurant  R
+
+        <include refid="search" />
+    </select>
+
+    <resultMap id="restaurantMap" type="tasteone.TasteOfSeoul.domain.RestaurantVO">
+        <result property="restaurantId" column="restaurantid"/>
+        <result property="restaurantName" column="restaurantname"/>
+        <result property="address" column="address" />
+        <result property="category" column="category"/>
+        <result property="latitude" column="latitude" />
+        <result property="longitude" column="longitude" />
+        <result property="openHour" column="openhour" />
+        <result property="closeHour" column="closehour" />
+        <result property="phone" column="phone" />
+    </resultMap>
+
+</mapper>

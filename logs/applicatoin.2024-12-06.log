@@ -1,0 +1,1290 @@
+2024:12:06 15:31:35.951 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Starting TasteOfSeoulApplication using Java 17.0.13 with PID 21768 (C:\Users\csy\Desktop\TasteOfSeoul-develop\build\classes\java\main started by csy in C:\Users\csy\Desktop\TasteOfSeoul-develop) 
+2024:12:06 15:31:35.953 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : No active profile set, falling back to 1 default profile: "default" 
+2024:12:06 15:31:36.009 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024:12:06 15:31:36.010 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024:12:06 15:31:37.279 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http) 
+2024:12:06 15:31:37.293 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2024:12:06 15:31:37.293 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.33] 
+2024:12:06 15:31:37.516 INFO  --- [restartedMain]
+				o.apache.jasper.servlet.TldScanner : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024:12:06 15:31:37.523 INFO  --- [restartedMain]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024:12:06 15:31:37.523 INFO  --- [restartedMain]
+				o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1513 ms 
+2024:12:06 15:31:38.157 INFO  --- [restartedMain]
+				o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2024:12:06 15:31:38.201 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8888 (http) with context path '/' 
+2024:12:06 15:31:38.209 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Started TasteOfSeoulApplication in 2.916 seconds (process running for 4.357) 
+2024:12:06 15:31:51.457 INFO  --- [http-nio-8888-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024:12:06 15:31:51.457 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024:12:06 15:31:51.459 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Completed initialization in 2 ms 
+2024:12:06 15:31:52.597 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024:12:06 15:31:52.730 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.pool.PoolBase : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.) 
+2024:12:06 15:31:52.737 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection net.sf.log4jdbc.ConnectionSpy@42fa8d4f 
+2024:12:06 15:31:52.740 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024:12:06 15:31:52.753 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:31:52.801 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 4 msec} 
+2024:12:06 15:31:53.940 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:31:53.942 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:31:55.610 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:31:55.612 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:31:56.438 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:31:56.440 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:31:57.099 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 2 msec} 
+2024:12:06 15:31:57.101 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:31:57.985 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:31:57.987 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:31:58.929 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:31:58.930 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:31:59.684 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:31:59.685 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:32:01.034 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '한식'  {executed in 1 msec} 
+2024:12:06 15:32:01.035 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '한식'  {executed in 1 msec} 
+2024:12:06 15:32:02.905 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '일식'  {executed in 0 msec} 
+2024:12:06 15:32:02.907 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '일식'  {executed in 1 msec} 
+2024:12:06 15:32:03.433 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:32:03.434 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:32:04.251 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:04.252 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:06.351 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '일식'  {executed in 1 msec} 
+2024:12:06 15:32:06.352 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '일식'  {executed in 1 msec} 
+2024:12:06 15:32:07.148 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:07.149 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:07.998 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:08.000 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:08.854 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:08.856 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:09.520 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:09.522 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:09.953 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:09.955 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:10.563 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:10.564 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:11.273 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:11.275 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:11.568 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:11.569 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:11.954 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:11.955 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:12.802 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:12.802 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:13.072 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:13.073 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:13.342 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:13.343 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:13.895 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:13.897 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:14.152 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:14.153 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:14.475 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:14.476 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:15.520 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:32:15.522 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 2 msec} 
+2024:12:06 15:32:16.943 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:32:16.946 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 2 msec} 
+2024:12:06 15:32:17.290 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:32:17.292 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:32:17.726 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:32:17.729 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 2 msec} 
+2024:12:06 15:32:32.165 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:32.166 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:36.192 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:36.193 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:37.002 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:37.004 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:37.682 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:37.683 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:38.498 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:38.499 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:39.026 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:39.027 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:39.531 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:39.533 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:40.014 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:40.016 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:32:40.927 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:32:40.928 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:32:42.696 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:42.697 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:32:44.487 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:32:44.490 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 3 msec} 
+2024:12:06 15:32:46.061 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '일식'  {executed in 0 msec} 
+2024:12:06 15:32:46.062 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '일식'  {executed in 0 msec} 
+2024:12:06 15:32:46.773 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '일식'  {executed in 1 msec} 
+2024:12:06 15:32:46.773 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '일식'  {executed in 0 msec} 
+2024:12:06 15:32:48.237 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '양식'  {executed in 0 msec} 
+2024:12:06 15:32:48.239 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '양식'  {executed in 0 msec} 
+2024:12:06 15:32:50.704 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '아시안'  {executed in 0 msec} 
+2024:12:06 15:32:50.706 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '아시안'  {executed in 1 msec} 
+2024:12:06 15:32:52.550 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '카페'  {executed in 0 msec} 
+2024:12:06 15:32:52.551 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '카페'  {executed in 0 msec} 
+2024:12:06 15:32:53.446 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '술집'  {executed in 0 msec} 
+2024:12:06 15:32:53.447 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '술집'  {executed in 1 msec} 
+2024:12:06 15:32:54.150 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '분식'  {executed in 0 msec} 
+2024:12:06 15:32:54.151 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '분식'  {executed in 1 msec} 
+2024:12:06 15:32:55.680 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '육류'  {executed in 0 msec} 
+2024:12:06 15:32:55.681 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '육류'  {executed in 0 msec} 
+2024:12:06 15:32:56.689 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '해산물'  {executed in 0 msec} 
+2024:12:06 15:32:56.690 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '해산물'  {executed in 0 msec} 
+2024:12:06 15:32:57.455 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '경양식'  {executed in 0 msec} 
+2024:12:06 15:32:57.456 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '경양식'  {executed in 0 msec} 
+2024:12:06 15:32:58.270 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '뷔페식'  {executed in 1 msec} 
+2024:12:06 15:32:58.271 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '뷔페식'  {executed in 1 msec} 
+2024:12:06 15:32:59.156 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '호프/통닭'  {executed in 0 msec} 
+2024:12:06 15:32:59.157 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '호프/통닭'  {executed in 0 msec} 
+2024:12:06 15:32:59.733 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '기타'  {executed in 1 msec} 
+2024:12:06 15:32:59.735 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '기타'  {executed in 2 msec} 
+2024:12:06 15:33:00.854 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:33:00.855 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:33:02.081 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:33:02.083 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:33:39.042 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:33:39.043 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:35:32.214 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '아시안'  {executed in 0 msec} 
+2024:12:06 15:35:32.215 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '아시안'  {executed in 1 msec} 
+2024:12:06 15:35:34.150 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '아시안'  {executed in 1 msec} 
+2024:12:06 15:35:34.151 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '아시안'  {executed in 1 msec} 
+2024:12:06 15:35:35.673 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '분식'  {executed in 0 msec} 
+2024:12:06 15:35:35.674 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '분식'  {executed in 1 msec} 
+2024:12:06 15:35:38.722 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:35:38.724 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 2 msec} 
+2024:12:06 15:35:56.578 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '육류'  {executed in 0 msec} 
+2024:12:06 15:35:56.581 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '육류'  {executed in 1 msec} 
+2024:12:06 15:35:57.856 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:35:57.857 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:36:16.487 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '아시안'  {executed in 0 msec} 
+2024:12:06 15:36:16.488 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '아시안'  {executed in 0 msec} 
+2024:12:06 15:36:21.689 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:36:21.690 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:36:27.286 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:36:27.288 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:36:41.743 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 4 msec} 
+2024:12:06 15:36:41.750 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 6 msec} 
+2024:12:06 15:36:45.874 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '한식'  {executed in 0 msec} 
+2024:12:06 15:36:45.875 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '한식'  {executed in 1 msec} 
+2024:12:06 15:36:51.057 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:36:51.059 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 2 msec} 
+2024:12:06 15:38:08.142 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Starting TasteOfSeoulApplication using Java 17.0.13 with PID 22464 (C:\Users\csy\Desktop\TasteOfSeoul-develop\build\classes\java\main started by csy in C:\Users\csy\Desktop\TasteOfSeoul-develop) 
+2024:12:06 15:38:08.144 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : No active profile set, falling back to 1 default profile: "default" 
+2024:12:06 15:38:08.203 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024:12:06 15:38:08.203 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024:12:06 15:38:09.403 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http) 
+2024:12:06 15:38:09.417 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2024:12:06 15:38:09.418 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.33] 
+2024:12:06 15:38:09.634 INFO  --- [restartedMain]
+				o.apache.jasper.servlet.TldScanner : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024:12:06 15:38:09.641 INFO  --- [restartedMain]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024:12:06 15:38:09.641 INFO  --- [restartedMain]
+				o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1437 ms 
+2024:12:06 15:38:10.247 WARN  --- [restartedMain]
+				o.s.b.d.a.OptionalLiveReloadServer : Unable to start LiveReload server 
+2024:12:06 15:38:10.264 WARN  --- [restartedMain]
+				o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop' 
+2024:12:06 15:38:10.331 INFO  --- [restartedMain]
+				o.s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+2024:12:06 15:38:10.352 ERROR --- [restartedMain]
+				o.s.b.d.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8888 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
+ 
+2024:12:06 15:40:26.108 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Starting TasteOfSeoulApplication using Java 17.0.13 with PID 21816 (C:\Users\csy\Desktop\TasteOfSeoul-develop\build\classes\java\main started by csy in C:\Users\csy\Desktop\TasteOfSeoul-develop) 
+2024:12:06 15:40:26.110 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : No active profile set, falling back to 1 default profile: "default" 
+2024:12:06 15:40:26.161 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024:12:06 15:40:26.163 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024:12:06 15:40:27.331 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http) 
+2024:12:06 15:40:27.343 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2024:12:06 15:40:27.343 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.33] 
+2024:12:06 15:40:27.566 INFO  --- [restartedMain]
+				o.apache.jasper.servlet.TldScanner : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024:12:06 15:40:27.573 INFO  --- [restartedMain]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024:12:06 15:40:27.575 INFO  --- [restartedMain]
+				o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1411 ms 
+2024:12:06 15:40:28.146 WARN  --- [restartedMain]
+				o.s.b.d.a.OptionalLiveReloadServer : Unable to start LiveReload server 
+2024:12:06 15:40:28.163 WARN  --- [restartedMain]
+				o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop' 
+2024:12:06 15:40:28.227 INFO  --- [restartedMain]
+				o.s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+2024:12:06 15:40:28.248 ERROR --- [restartedMain]
+				o.s.b.d.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8888 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
+ 
+2024:12:06 15:40:34.992 INFO  --- [SpringApplicationShutdownHook]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024:12:06 15:40:34.996 INFO  --- [SpringApplicationShutdownHook]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2024:12:06 15:41:26.911 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Starting TasteOfSeoulApplication using Java 17.0.13 with PID 15064 (C:\Users\csy\Desktop\TasteOfSeoul-develop\build\classes\java\main started by csy in C:\Users\csy\Desktop\TasteOfSeoul-develop) 
+2024:12:06 15:41:26.914 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : No active profile set, falling back to 1 default profile: "default" 
+2024:12:06 15:41:26.963 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024:12:06 15:41:26.963 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024:12:06 15:41:28.126 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http) 
+2024:12:06 15:41:28.138 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2024:12:06 15:41:28.139 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.33] 
+2024:12:06 15:41:28.365 INFO  --- [restartedMain]
+				o.apache.jasper.servlet.TldScanner : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024:12:06 15:41:28.372 INFO  --- [restartedMain]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024:12:06 15:41:28.373 INFO  --- [restartedMain]
+				o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1408 ms 
+2024:12:06 15:41:28.964 INFO  --- [restartedMain]
+				o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2024:12:06 15:41:29.003 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8888 (http) with context path '/' 
+2024:12:06 15:41:29.011 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Started TasteOfSeoulApplication in 2.637 seconds (process running for 3.412) 
+2024:12:06 15:41:36.313 INFO  --- [http-nio-8888-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024:12:06 15:41:36.313 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024:12:06 15:41:36.315 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Completed initialization in 0 ms 
+2024:12:06 15:41:37.347 INFO  --- [http-nio-8888-exec-10]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024:12:06 15:41:37.533 INFO  --- [http-nio-8888-exec-10]
+				com.zaxxer.hikari.pool.PoolBase : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.) 
+2024:12:06 15:41:37.550 INFO  --- [http-nio-8888-exec-10]
+				com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection net.sf.log4jdbc.ConnectionSpy@3d684690 
+2024:12:06 15:41:37.553 INFO  --- [http-nio-8888-exec-10]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024:12:06 15:41:37.575 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 2 msec} 
+2024:12:06 15:41:37.611 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 2 msec} 
+2024:12:06 15:41:38.822 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:41:38.824 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:39.672 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '한식'  {executed in 0 msec} 
+2024:12:06 15:41:39.673 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '한식'  {executed in 0 msec} 
+2024:12:06 15:41:40.054 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:41:40.055 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:41:40.753 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '양식'  {executed in 0 msec} 
+2024:12:06 15:41:40.756 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '양식'  {executed in 1 msec} 
+2024:12:06 15:41:41.177 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '일식'  {executed in 1 msec} 
+2024:12:06 15:41:41.178 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '일식'  {executed in 1 msec} 
+2024:12:06 15:41:41.483 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '카페'  {executed in 0 msec} 
+2024:12:06 15:41:41.485 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '카페'  {executed in 1 msec} 
+2024:12:06 15:41:41.795 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '술집'  {executed in 0 msec} 
+2024:12:06 15:41:41.797 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '술집'  {executed in 1 msec} 
+2024:12:06 15:41:42.147 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '해산물'  {executed in 0 msec} 
+2024:12:06 15:41:42.150 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '해산물'  {executed in 1 msec} 
+2024:12:06 15:41:42.657 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '육류'  {executed in 0 msec} 
+2024:12:06 15:41:42.659 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '육류'  {executed in 1 msec} 
+2024:12:06 15:41:43.885 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 2 msec} 
+2024:12:06 15:41:43.886 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:44.439 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:44.440 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:45.230 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:41:45.231 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:41:45.646 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:45.647 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:46.790 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '아시안'  {executed in 1 msec} 
+2024:12:06 15:41:46.791 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '아시안'  {executed in 0 msec} 
+2024:12:06 15:41:47.828 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:41:47.830 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:50.066 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:50.067 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:50.720 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:41:50.722 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:41:51.180 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:41:51.181 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:41:51.771 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:41:51.773 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:41:56.089 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '한식'  {executed in 2 msec} 
+2024:12:06 15:41:56.091 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '한식'  {executed in 1 msec} 
+2024:12:06 15:41:56.459 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:56.460 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:41:58.253 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:41:58.255 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:41:59.069 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:59.070 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:41:59.221 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:59.223 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:59.367 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:59.368 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:59.523 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:59.525 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 2 msec} 
+2024:12:06 15:41:59.668 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:41:59.669 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:42:01.846 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:42:01.848 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:42:03.961 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%'))  {executed in 0 msec} 
+2024:12:06 15:42:03.963 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%'))  {executed in 1 msec} 
+2024:12:06 15:42:11.957 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '대청', '%') OR address 
+LIKE CONCAT('%', '대청', '%'))  {executed in 1 msec} 
+2024:12:06 15:42:11.959 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '대청', '%') OR address LIKE CONCAT('%', '대청', '%'))  {executed in 1 msec} 
+2024:12:06 15:42:15.693 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '가든', '%') OR address 
+LIKE CONCAT('%', '가든', '%'))  {executed in 0 msec} 
+2024:12:06 15:42:15.696 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '가든', '%') OR address LIKE CONCAT('%', '가든', '%'))  {executed in 1 msec} 
+2024:12:06 15:42:45.199 INFO  --- [SpringApplicationShutdownHook]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024:12:06 15:42:45.203 INFO  --- [SpringApplicationShutdownHook]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2024:12:06 15:49:38.186 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Starting TasteOfSeoulApplication using Java 17.0.13 with PID 21360 (C:\Users\csy\Desktop\TasteOfSeoul-develop\build\classes\java\main started by csy in C:\Users\csy\Desktop\TasteOfSeoul-develop) 
+2024:12:06 15:49:38.188 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : No active profile set, falling back to 1 default profile: "default" 
+2024:12:06 15:49:38.242 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024:12:06 15:49:38.243 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024:12:06 15:49:39.566 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http) 
+2024:12:06 15:49:39.583 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2024:12:06 15:49:39.584 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.33] 
+2024:12:06 15:49:39.824 INFO  --- [restartedMain]
+				o.apache.jasper.servlet.TldScanner : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024:12:06 15:49:39.832 INFO  --- [restartedMain]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024:12:06 15:49:39.832 INFO  --- [restartedMain]
+				o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1589 ms 
+2024:12:06 15:49:40.427 INFO  --- [restartedMain]
+				o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2024:12:06 15:49:40.471 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8888 (http) with context path '/' 
+2024:12:06 15:49:40.481 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Started TasteOfSeoulApplication in 2.875 seconds (process running for 3.648) 
+2024:12:06 15:49:45.635 INFO  --- [http-nio-8888-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024:12:06 15:49:45.636 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024:12:06 15:49:45.637 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
+2024:12:06 15:49:45.702 INFO  --- [http-nio-8888-exec-1]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024:12:06 15:49:45.821 INFO  --- [http-nio-8888-exec-1]
+				com.zaxxer.hikari.pool.PoolBase : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.) 
+2024:12:06 15:49:45.827 INFO  --- [http-nio-8888-exec-1]
+				com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection net.sf.log4jdbc.ConnectionSpy@1d9a1cdb 
+2024:12:06 15:49:45.830 INFO  --- [http-nio-8888-exec-1]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024:12:06 15:49:45.843 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중식'  {executed in 1 msec} 
+2024:12:06 15:49:45.871 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중식'  {executed in 1 msec} 
+2024:12:06 15:50:30.765 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:50:30.768 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 2 msec} 
+2024:12:06 15:50:35.457 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%'))  {executed in 0 msec} 
+2024:12:06 15:50:35.459 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%'))  {executed in 1 msec} 
+2024:12:06 15:50:38.437 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%'))  {executed in 1 msec} 
+2024:12:06 15:50:38.438 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%'))  {executed in 1 msec} 
+2024:12:06 15:50:40.901 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:50:40.903 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 2 msec} 
+2024:12:06 15:50:45.921 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '불이아', '%') OR address 
+LIKE CONCAT('%', '불이아', '%'))  {executed in 1 msec} 
+2024:12:06 15:50:45.923 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '불이아', '%') OR address LIKE CONCAT('%', '불이아', '%'))  {executed in 1 msec} 
+2024:12:06 15:50:50.007 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '한식'  {executed in 0 msec} 
+2024:12:06 15:50:50.008 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '한식'  {executed in 0 msec} 
+2024:12:06 15:50:51.159 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:50:51.160 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 1 msec} 
+2024:12:06 15:50:53.383 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '불이아', '%') OR address 
+LIKE CONCAT('%', '불이아', '%')) AND foodCategory = '중국식'  {executed in 2 msec} 
+2024:12:06 15:50:53.384 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '불이아', '%') OR address LIKE CONCAT('%', '불이아', '%')) AND foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:50:55.542 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:50:55.543 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:50:57.393 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%'))  {executed in 0 msec} 
+2024:12:06 15:50:57.394 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%'))  {executed in 0 msec} 
+2024:12:06 15:51:01.238 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '불이아', '%') OR address 
+LIKE CONCAT('%', '불이아', '%'))  {executed in 0 msec} 
+2024:12:06 15:51:01.240 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '불이아', '%') OR address LIKE CONCAT('%', '불이아', '%'))  {executed in 1 msec} 
+2024:12:06 15:51:01.421 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '불이아', '%') OR address 
+LIKE CONCAT('%', '불이아', '%'))  {executed in 0 msec} 
+2024:12:06 15:51:01.422 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '불이아', '%') OR address LIKE CONCAT('%', '불이아', '%'))  {executed in 0 msec} 
+2024:12:06 15:51:01.611 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '불이아', '%') OR address 
+LIKE CONCAT('%', '불이아', '%'))  {executed in 0 msec} 
+2024:12:06 15:51:01.614 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '불이아', '%') OR address LIKE CONCAT('%', '불이아', '%'))  {executed in 1 msec} 
+2024:12:06 15:51:01.796 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '불이아', '%') OR address 
+LIKE CONCAT('%', '불이아', '%'))  {executed in 1 msec} 
+2024:12:06 15:51:01.797 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '불이아', '%') OR address LIKE CONCAT('%', '불이아', '%'))  {executed in 1 msec} 
+2024:12:06 15:51:06.365 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:51:06.367 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 2 msec} 
+2024:12:06 15:51:09.108 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%'))  {executed in 0 msec} 
+2024:12:06 15:51:09.110 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%'))  {executed in 1 msec} 
+2024:12:06 15:51:11.408 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%'))  {executed in 1 msec} 
+2024:12:06 15:51:11.409 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%'))  {executed in 0 msec} 
+2024:12:06 15:51:13.085 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%'))  {executed in 0 msec} 
+2024:12:06 15:51:13.087 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%'))  {executed in 1 msec} 
+2024:12:06 15:51:14.470 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%'))  {executed in 1 msec} 
+2024:12:06 15:51:14.471 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%'))  {executed in 1 msec} 
+2024:12:06 15:51:14.610 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%'))  {executed in 0 msec} 
+2024:12:06 15:51:14.611 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%'))  {executed in 0 msec} 
+2024:12:06 15:51:17.706 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '한식'  {executed in 1 msec} 
+2024:12:06 15:51:17.707 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '한식'  {executed in 1 msec} 
+2024:12:06 15:51:19.765 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:51:19.766 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:51:20.298 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '아시안'  {executed in 1 msec} 
+2024:12:06 15:51:20.299 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '아시안'  {executed in 0 msec} 
+2024:12:06 15:51:21.264 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '리엔', '%') OR address 
+LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '일식'  {executed in 0 msec} 
+2024:12:06 15:51:21.264 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '리엔', '%') OR address LIKE CONCAT('%', '리엔', '%')) AND foodCategory = '일식'  {executed in 0 msec} 
+2024:12:06 15:51:23.714 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '한식'  {executed in 1 msec} 
+2024:12:06 15:51:23.716 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '한식'  {executed in 1 msec} 
+2024:12:06 15:51:24.168 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '양식'  {executed in 0 msec} 
+2024:12:06 15:51:24.170 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '양식'  {executed in 1 msec} 
+2024:12:06 15:51:24.736 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '한식'  {executed in 1 msec} 
+2024:12:06 15:51:24.737 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '한식'  {executed in 1 msec} 
+2024:12:06 15:51:28.844 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 0 msec} 
+2024:12:06 15:51:28.845 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 15:52:43.635 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '양식'  {executed in 1 msec} 
+2024:12:06 15:52:43.636 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '양식'  {executed in 0 msec} 
+2024:12:06 15:53:40.457 INFO  --- [File Watcher]
+				o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 12 class path changes (0 additions, 0 deletions, 12 modifications) 
+2024:12:06 15:53:40.619 INFO  --- [Thread-5]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024:12:06 15:53:40.623 INFO  --- [Thread-5]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2024:12:06 15:53:40.723 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Starting TasteOfSeoulApplication using Java 17.0.13 with PID 21360 (C:\Users\csy\Desktop\TasteOfSeoul-develop\build\classes\java\main started by csy in C:\Users\csy\Desktop\TasteOfSeoul-develop) 
+2024:12:06 15:53:40.724 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : No active profile set, falling back to 1 default profile: "default" 
+2024:12:06 15:53:41.017 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http) 
+2024:12:06 15:53:41.018 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2024:12:06 15:53:41.018 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.33] 
+2024:12:06 15:53:41.149 INFO  --- [restartedMain]
+				o.apache.jasper.servlet.TldScanner : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024:12:06 15:53:41.152 INFO  --- [restartedMain]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024:12:06 15:53:41.152 INFO  --- [restartedMain]
+				o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 425 ms 
+2024:12:06 15:53:41.327 INFO  --- [restartedMain]
+				o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2024:12:06 15:53:41.339 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8888 (http) with context path '/' 
+2024:12:06 15:53:41.342 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Started TasteOfSeoulApplication in 0.668 seconds (process running for 244.508) 
+2024:12:06 15:53:41.345 INFO  --- [restartedMain]
+				o.s.b.d.a.ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   GenericCacheConfiguration:
+      Did not match:
+         - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration unknown cache type (CacheCondition)
+
+   SimpleCacheConfiguration:
+      Did not match:
+         - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration unknown cache type (CacheCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+ 
+2024:12:06 15:59:17.940 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Starting TasteOfSeoulApplication using Java 17.0.13 with PID 21556 (C:\Users\csy\Desktop\TasteOfSeoul-develop\build\classes\java\main started by csy in C:\Users\csy\Desktop\TasteOfSeoul-develop) 
+2024:12:06 15:59:17.942 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : No active profile set, falling back to 1 default profile: "default" 
+2024:12:06 15:59:17.995 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024:12:06 15:59:17.996 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024:12:06 15:59:19.230 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http) 
+2024:12:06 15:59:19.243 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2024:12:06 15:59:19.245 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.33] 
+2024:12:06 15:59:19.512 INFO  --- [restartedMain]
+				o.apache.jasper.servlet.TldScanner : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024:12:06 15:59:19.521 INFO  --- [restartedMain]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024:12:06 15:59:19.522 INFO  --- [restartedMain]
+				o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1526 ms 
+2024:12:06 15:59:20.122 INFO  --- [restartedMain]
+				o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2024:12:06 15:59:20.160 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8888 (http) with context path '/' 
+2024:12:06 15:59:20.169 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Started TasteOfSeoulApplication in 2.758 seconds (process running for 3.694) 
+2024:12:06 15:59:23.670 INFO  --- [http-nio-8888-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024:12:06 15:59:23.670 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024:12:06 15:59:23.671 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
+2024:12:06 15:59:24.911 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024:12:06 15:59:25.117 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.pool.PoolBase : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.) 
+2024:12:06 15:59:25.129 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection net.sf.log4jdbc.ConnectionSpy@31a270ed 
+2024:12:06 15:59:25.132 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024:12:06 15:59:25.147 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 2 msec} 
+2024:12:06 15:59:25.172 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 2 msec} 
+2024:12:06 15:59:34.555 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 15:59:34.558 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 15:59:43.493 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '한식'  {executed in 0 msec} 
+2024:12:06 15:59:43.496 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '한식'  {executed in 1 msec} 
+2024:12:06 15:59:47.588 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중국식'  {executed in 1 msec} 
+2024:12:06 15:59:47.590 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중국식'  {executed in 0 msec} 
+2024:12:06 16:07:23.137 INFO  --- [SpringApplicationShutdownHook]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024:12:06 16:07:23.142 INFO  --- [SpringApplicationShutdownHook]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2024:12:06 16:07:25.987 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Starting TasteOfSeoulApplication using Java 17.0.13 with PID 22952 (C:\Users\csy\Desktop\TasteOfSeoul-develop\build\classes\java\main started by csy in C:\Users\csy\Desktop\TasteOfSeoul-develop) 
+2024:12:06 16:07:25.990 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : No active profile set, falling back to 1 default profile: "default" 
+2024:12:06 16:07:26.044 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024:12:06 16:07:26.045 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024:12:06 16:07:27.307 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http) 
+2024:12:06 16:07:27.321 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2024:12:06 16:07:27.321 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.33] 
+2024:12:06 16:07:27.534 INFO  --- [restartedMain]
+				o.apache.jasper.servlet.TldScanner : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024:12:06 16:07:27.542 INFO  --- [restartedMain]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024:12:06 16:07:27.544 INFO  --- [restartedMain]
+				o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1498 ms 
+2024:12:06 16:07:28.148 INFO  --- [restartedMain]
+				o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2024:12:06 16:07:28.187 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8888 (http) with context path '/' 
+2024:12:06 16:07:28.198 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Started TasteOfSeoulApplication in 2.756 seconds (process running for 3.481) 
+2024:12:06 16:07:32.293 INFO  --- [http-nio-8888-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024:12:06 16:07:32.294 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024:12:06 16:07:32.295 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
+2024:12:06 16:07:33.695 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024:12:06 16:07:34.088 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.pool.PoolBase : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.) 
+2024:12:06 16:07:34.100 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection net.sf.log4jdbc.ConnectionSpy@4dd31e1e 
+2024:12:06 16:07:34.103 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024:12:06 16:07:34.124 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 16:07:34.174 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 3 msec} 
+2024:12:06 16:07:35.833 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 16:07:35.837 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 2 msec} 
+2024:12:06 16:07:36.455 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '한식'  {executed in 1 msec} 
+2024:12:06 16:07:36.457 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '한식'  {executed in 2 msec} 
+2024:12:06 16:07:37.186 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중식'  {executed in 0 msec} 
+2024:12:06 16:07:37.187 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중식'  {executed in 0 msec} 
+2024:12:06 16:07:39.152 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중식'  {executed in 0 msec} 
+2024:12:06 16:07:39.154 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중식'  {executed in 0 msec} 
+2024:12:06 16:08:44.090 INFO  --- [SpringApplicationShutdownHook]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024:12:06 16:08:44.094 INFO  --- [SpringApplicationShutdownHook]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2024:12:06 16:08:47.452 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Starting TasteOfSeoulApplication using Java 17.0.13 with PID 8924 (C:\Users\csy\Desktop\TasteOfSeoul-develop\build\classes\java\main started by csy in C:\Users\csy\Desktop\TasteOfSeoul-develop) 
+2024:12:06 16:08:47.455 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : No active profile set, falling back to 1 default profile: "default" 
+2024:12:06 16:08:47.511 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024:12:06 16:08:47.512 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024:12:06 16:08:48.695 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http) 
+2024:12:06 16:08:48.708 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2024:12:06 16:08:48.708 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.33] 
+2024:12:06 16:08:48.931 INFO  --- [restartedMain]
+				o.apache.jasper.servlet.TldScanner : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024:12:06 16:08:48.938 INFO  --- [restartedMain]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024:12:06 16:08:48.939 INFO  --- [restartedMain]
+				o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1427 ms 
+2024:12:06 16:08:49.545 INFO  --- [restartedMain]
+				o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2024:12:06 16:08:49.583 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8888 (http) with context path '/' 
+2024:12:06 16:08:49.593 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Started TasteOfSeoulApplication in 2.752 seconds (process running for 3.612) 
+2024:12:06 16:08:54.123 INFO  --- [File Watcher]
+				o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 12 class path changes (0 additions, 0 deletions, 12 modifications) 
+2024:12:06 16:08:54.475 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Starting TasteOfSeoulApplication using Java 17.0.13 with PID 8924 (C:\Users\csy\Desktop\TasteOfSeoul-develop\build\classes\java\main started by csy in C:\Users\csy\Desktop\TasteOfSeoul-develop) 
+2024:12:06 16:08:54.475 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : No active profile set, falling back to 1 default profile: "default" 
+2024:12:06 16:08:54.795 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http) 
+2024:12:06 16:08:54.796 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2024:12:06 16:08:54.796 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.33] 
+2024:12:06 16:08:54.921 INFO  --- [restartedMain]
+				o.apache.jasper.servlet.TldScanner : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024:12:06 16:08:54.924 INFO  --- [restartedMain]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024:12:06 16:08:54.925 INFO  --- [restartedMain]
+				o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 446 ms 
+2024:12:06 16:08:55.070 INFO  --- [restartedMain]
+				o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2024:12:06 16:08:55.084 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8888 (http) with context path '/' 
+2024:12:06 16:08:55.089 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Started TasteOfSeoulApplication in 0.67 seconds (process running for 9.107) 
+2024:12:06 16:08:55.091 INFO  --- [restartedMain]
+				o.s.b.d.a.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged 
+2024:12:06 16:08:55.207 INFO  --- [http-nio-8888-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024:12:06 16:08:55.207 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024:12:06 16:08:55.207 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Completed initialization in 0 ms 
+2024:12:06 16:08:56.200 INFO  --- [http-nio-8888-exec-7]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024:12:06 16:08:56.273 INFO  --- [http-nio-8888-exec-7]
+				com.zaxxer.hikari.pool.PoolBase : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.) 
+2024:12:06 16:08:56.283 INFO  --- [http-nio-8888-exec-7]
+				com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection net.sf.log4jdbc.ConnectionSpy@28402623 
+2024:12:06 16:08:56.288 INFO  --- [http-nio-8888-exec-7]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024:12:06 16:08:56.310 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 16:08:56.344 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 2 msec} 
+2024:12:06 16:08:58.889 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '한식'  {executed in 1 msec} 
+2024:12:06 16:08:58.891 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '한식'  {executed in 1 msec} 
+2024:12:06 16:08:59.574 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 16:08:59.576 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 1 msec} 
+2024:12:06 16:09:00.233 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중식'  {executed in 1 msec} 
+2024:12:06 16:09:00.234 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중식'  {executed in 1 msec} 
+2024:12:06 16:09:01.570 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 16:09:01.572 INFO  --- [http-nio-8888-exec-1]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 2 msec} 
+2024:12:06 16:09:04.772 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중식'  {executed in 1 msec} 
+2024:12:06 16:09:04.773 INFO  --- [http-nio-8888-exec-3]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중식'  {executed in 1 msec} 
+2024:12:06 16:09:05.672 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중식'  {executed in 1 msec} 
+2024:12:06 16:09:05.673 INFO  --- [http-nio-8888-exec-2]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중식'  {executed in 0 msec} 
+2024:12:06 16:09:07.087 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중식'  {executed in 4 msec} 
+2024:12:06 16:09:07.091 INFO  --- [http-nio-8888-exec-5]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중식'  {executed in 2 msec} 
+2024:12:06 16:09:10.794 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE (restaurant LIKE CONCAT('%', '불이아', '%') OR address 
+LIKE CONCAT('%', '불이아', '%')) AND foodCategory = '중식'  {executed in 1 msec} 
+2024:12:06 16:09:10.795 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE (restaurant LIKE 
+CONCAT('%', '불이아', '%') OR address LIKE CONCAT('%', '불이아', '%')) AND foodCategory = '중식'  {executed in 0 msec} 
+2024:12:06 16:09:21.704 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 0 msec} 
+2024:12:06 16:09:21.707 INFO  --- [http-nio-8888-exec-8]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 2 msec} 
+2024:12:06 16:09:25.121 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '한식'  {executed in 1 msec} 
+2024:12:06 16:09:25.123 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '한식'  {executed in 1 msec} 
+2024:12:06 16:09:27.324 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중식'  {executed in 1 msec} 
+2024:12:06 16:09:27.325 INFO  --- [http-nio-8888-exec-9]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중식'  {executed in 0 msec} 
+2024:12:06 16:09:28.881 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '한식'  {executed in 1 msec} 
+2024:12:06 16:09:28.883 INFO  --- [http-nio-8888-exec-4]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '한식'  {executed in 1 msec} 
+2024:12:06 16:09:30.655 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 16:09:30.659 INFO  --- [http-nio-8888-exec-10]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 4 msec} 
+2024:12:06 16:09:53.389 INFO  --- [File Watcher]
+				o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 12 class path changes (0 additions, 0 deletions, 12 modifications) 
+2024:12:06 16:09:53.549 INFO  --- [Thread-7]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024:12:06 16:09:53.554 INFO  --- [Thread-7]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2024:12:06 16:09:53.642 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Starting TasteOfSeoulApplication using Java 17.0.13 with PID 8924 (C:\Users\csy\Desktop\TasteOfSeoul-develop\build\classes\java\main started by csy in C:\Users\csy\Desktop\TasteOfSeoul-develop) 
+2024:12:06 16:09:53.643 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : No active profile set, falling back to 1 default profile: "default" 
+2024:12:06 16:09:53.912 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http) 
+2024:12:06 16:09:53.913 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2024:12:06 16:09:53.913 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.33] 
+2024:12:06 16:09:54.035 INFO  --- [restartedMain]
+				o.apache.jasper.servlet.TldScanner : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024:12:06 16:09:54.039 INFO  --- [restartedMain]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024:12:06 16:09:54.039 INFO  --- [restartedMain]
+				o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 394 ms 
+2024:12:06 16:09:54.161 INFO  --- [restartedMain]
+				o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2024:12:06 16:09:54.175 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8888 (http) with context path '/' 
+2024:12:06 16:09:54.180 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Started TasteOfSeoulApplication in 0.578 seconds (process running for 68.198) 
+2024:12:06 16:09:54.181 INFO  --- [restartedMain]
+				o.s.b.d.a.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged 
+2024:12:06 17:51:21.754 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Starting TasteOfSeoulApplication using Java 17.0.13 with PID 6848 (C:\Users\csy\Desktop\TasteOfSeoul-develop\build\classes\java\main started by csy in C:\Users\csy\Desktop\TasteOfSeoul-develop) 
+2024:12:06 17:51:21.758 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : No active profile set, falling back to 1 default profile: "default" 
+2024:12:06 17:51:21.818 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024:12:06 17:51:21.819 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024:12:06 17:51:23.274 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http) 
+2024:12:06 17:51:23.293 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2024:12:06 17:51:23.293 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.33] 
+2024:12:06 17:51:23.537 INFO  --- [restartedMain]
+				o.apache.jasper.servlet.TldScanner : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024:12:06 17:51:23.546 INFO  --- [restartedMain]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024:12:06 17:51:23.546 INFO  --- [restartedMain]
+				o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1727 ms 
+2024:12:06 17:51:24.245 INFO  --- [restartedMain]
+				o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2024:12:06 17:51:24.298 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8888 (http) with context path '/' 
+2024:12:06 17:51:24.308 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Started TasteOfSeoulApplication in 3.539 seconds (process running for 5.072) 
+2024:12:06 17:51:28.292 INFO  --- [http-nio-8888-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024:12:06 17:51:28.292 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024:12:06 17:51:28.294 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Completed initialization in 2 ms 
+2024:12:06 17:51:29.256 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024:12:06 17:51:29.449 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.pool.PoolBase : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.) 
+2024:12:06 17:51:29.461 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection net.sf.log4jdbc.ConnectionSpy@52d45d91 
+2024:12:06 17:51:29.465 INFO  --- [http-nio-8888-exec-6]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024:12:06 17:51:29.481 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R  {executed in 1 msec} 
+2024:12:06 17:51:29.509 INFO  --- [http-nio-8888-exec-6]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R  {executed in 5 msec} 
+2024:12:06 17:51:31.047 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT count(*) FROM restaurant R WHERE foodCategory = '중식'  {executed in 0 msec} 
+2024:12:06 17:51:31.048 INFO  --- [http-nio-8888-exec-7]
+				jdbc.sqltiming : SELECT ROW_NUMBER() OVER (ORDER BY id) AS rownum, R.* FROM restaurant R WHERE foodCategory 
+= '중식'  {executed in 0 msec} 
+2024:12:06 17:53:54.101 INFO  --- [SpringApplicationShutdownHook]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024:12:06 17:53:54.105 INFO  --- [SpringApplicationShutdownHook]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 

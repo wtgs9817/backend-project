@@ -1,0 +1,44 @@
+2024:12:16 09:31:08.448 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Starting TasteOfSeoulApplication using Java 17.0.7 with PID 20652 (C:\Users\USER\Desktop\부트캠프_깃허브_프로젝트\build\classes\java\main started by 김명찬 in C:\Users\USER\Desktop\부트캠프_깃허브_프로젝트) 
+2024:12:16 09:31:08.456 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : No active profile set, falling back to 1 default profile: "default" 
+2024:12:16 09:31:08.515 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024:12:16 09:31:08.516 INFO  --- [restartedMain]
+				o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024:12:16 09:31:09.983 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http) 
+2024:12:16 09:31:10.004 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2024:12:16 09:31:10.005 INFO  --- [restartedMain]
+				o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.33] 
+2024:12:16 09:31:10.275 INFO  --- [restartedMain]
+				o.apache.jasper.servlet.TldScanner : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024:12:16 09:31:10.282 INFO  --- [restartedMain]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024:12:16 09:31:10.283 INFO  --- [restartedMain]
+				o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1766 ms 
+2024:12:16 09:31:10.672 INFO  --- [restartedMain]
+				o.s.b.a.w.s.WelcomePageHandlerMapping : Adding welcome page template: index 
+2024:12:16 09:31:11.038 INFO  --- [restartedMain]
+				o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2024:12:16 09:31:11.085 INFO  --- [restartedMain]
+				o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8888 (http) with context path '/' 
+2024:12:16 09:31:11.095 INFO  --- [restartedMain]
+				t.T.TasteOfSeoulApplication : Started TasteOfSeoulApplication in 3.277 seconds (process running for 4.412) 
+2024:12:16 09:49:04.309 INFO  --- [http-nio-8888-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024:12:16 09:49:04.309 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024:12:16 09:49:04.310 INFO  --- [http-nio-8888-exec-1]
+				o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
+2024:12:16 09:49:06.666 INFO  --- [http-nio-8888-exec-7]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024:12:16 09:49:12.147 INFO  --- [http-nio-8888-exec-7]
+				com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@7a714a93 
+2024:12:16 09:49:12.153 INFO  --- [http-nio-8888-exec-7]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024:12:16 17:02:49.874 INFO  --- [SpringApplicationShutdownHook]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024:12:16 17:02:50.014 INFO  --- [SpringApplicationShutdownHook]
+				com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 

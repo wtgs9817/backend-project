@@ -1,0 +1,57 @@
+war 로 배포 시 오류 
+
+1. SpringBootServletInitializer 의 config가 중복되어 있는 지 확인(처음 만들어지는 서블릿클래스에 선언되어 있는데 
+못보고 application 클래스에 중복으로 만들어두면 에러발생)
+
+package tasteone.TasteOfSeoul;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.support.ErrorPageFilter;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication
+@MapperScan(basePackages = {"tasteone.TasteOfSeoul.com.example.mapper"})  //
+public class TasteOfSeoulApplication extends SpringBootServletInitializer {
+
+
+	//application 클래스에 SpringBootServletInitializer 상속받고 메소드를 정의하면
+	//프로젝트 처음만들 때 생성되는 서블릿 클래스는 필요가 없음.
+	// 추가 SpringBootServletInitializer 를 사용하지 않으면 war로 배포할 수 없음.
+
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(TasteOfSeoulApplication.class);
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(TasteOfSeoulApplication.class, args);
+	}
+
+
+}
+
+2. mybatis 설정 시 xml에서 클래스 경로 확인 하기
+
+ex) <!-- 연결하려는 mapper interface의 클래스명까지 써야함. -->
+<mapper namespace="tasteone.TasteOfSeoul.com.example.mapper.testMapper">
+
+ex)  <resultMap id="restaurantMap" type="tasteone.TasteOfSeoul.com.example.domain.RestaurantVO">
+
+ex) <!-- 연결하려는 mapper interface의 클래스명까지 써야함. -->
+<mapper namespace="tasteone.TasteOfSeoul.com.example.mapper.projectMapper">
+
+
+3. 톰캣 버전 확인
+spring boot 3.x 버전 이후부터는 톰캣 10 버전이상을 사용해야함.
+
+
+4. 톰캣 설정에서 server 창에서는 url 설정과 deployment 창에서는 Application context 설정하기
+
+
+5. jsp 와 thymeleaf 같이 사용해도 문제가 없다고 들었는데 같이 의존성을 주입하고 사용하니 충돌이 발생함.
+둘 중 하나만 사용하는 게 좋을듯
+
