@@ -7,18 +7,20 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
 
 
 ###  👨🏼‍🤝‍👨🏼 멤버 구성 및 역할
-
+#
 
 
 ### 🛠 기술 스택
-
+#
 
 
 ### 📍 아키텍쳐
+#
 
 
 
 ### 📌 주요 기능 
+#
 
 
 
@@ -38,29 +40,29 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
     접기/펼치기
   </summary>
 
-# <ul> JDK 
+ <ul> JDK 
   <li>JAVA 17</li>
 </ul>
 
-# <ul> 프레임워크 
+ <ul> 프레임워크 
   <li>Spring Boot 3.x</li>
 </ul>
 
-# <ul> 빌드도구
+ <ul> 빌드도구
   <li>Gradle</li>
 </ul>
 
-# <ul> 개발도구 
+ <ul> 개발도구 
   <li> Intellij IDEA(IDE) </li>
 </ul>
 
-# <ul> 기술 및 라이브러리 
+ <ul> 기술 및 라이브러리 
   <li>My Batis</li>
   <li>Lombok</li>
   <li>JSP</li>
 </ul>
 
-# <ul> 협업도구 
+ <ul> 협업도구 
   <li>GitHub</li>
   <li>ZOOM</li>
 </ul>
