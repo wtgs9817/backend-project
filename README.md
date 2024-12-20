@@ -57,7 +57,7 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
   - Lombok
   - JSP
 
-- **협업도구**
+ **협업도구**
   - GitHub
   - ZOOM
 
