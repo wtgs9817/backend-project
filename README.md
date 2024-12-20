@@ -7,24 +7,24 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
 
 
 ###  👨🏼‍🤝‍👨🏼 멤버 구성 및 역할
-<hr>
+<hr style="border: none; border-top: 1px solid #000;">
 
 
 ### 🛠 기술 스택
-<hr>
+<hr style="border: none; border-top: 1px solid #000;">
 
 
 ### 📍 아키텍쳐
-<hr>
+<hr style="border: none; border-top: 1px solid #000;">
 
 
 ### 📌 주요 기능 
-<hr>
+<hr style="border: none; border-top: 1px solid #000;">
 
 
 
 ### ERD
-<hr>
+<hr style="border: none; border-top: 1px solid #000;">
 ![image](https://github.com/user-attachments/assets/949806f4-bcb4-4807-9c7e-035cd9fc84c9)
 
 
@@ -32,7 +32,7 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
 
 
 ### 💻 개발환경
-<hr>
+<hr style="border: none; border-top: 1px solid #000;">
 
 <details>
   <summary>
