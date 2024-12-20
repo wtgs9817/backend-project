@@ -30,42 +30,36 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
 
 
 ### 😅 구현하지 못한 기능
-
+#
 
 ### 💻 개발환경
-
+#
 
 <details>
   <summary>
     접기/펼치기
   </summary>
 
- <ul> JDK 
-  <li>JAVA 17</li>
-</ul>
+- **JDK**
+  - JAVA 17
 
- <ul> 프레임워크 
-  <li>Spring Boot 3.x</li>
-</ul>
+- **프레임워크**
+  - Spring Boot 3.x
 
- <ul> 빌드도구
-  <li>Gradle</li>
-</ul>
+- **빌드도구**
+  - Gradle
 
- <ul> 개발도구 
-  <li> Intellij IDEA(IDE) </li>
-</ul>
+- **개발도구**
+  - Intellij IDEA (IDE)
 
- <ul> 기술 및 라이브러리 
-  <li>My Batis</li>
-  <li>Lombok</li>
-  <li>JSP</li>
-</ul>
+- **기술 및 라이브러리**
+  - MyBatis
+  - Lombok
+  - JSP
 
- <ul> 협업도구 
-  <li>GitHub</li>
-  <li>ZOOM</li>
-</ul>
+- **협업도구**
+  - GitHub
+  - ZOOM
 
 
 
