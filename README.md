@@ -9,11 +9,7 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
 
 ###  👨🏼‍🤝‍👨🏼 멤버 구성 및 역할
 #
-| Item            | Image                                   | Description      |
-|------------------|-----------------------------------------|------------------|
-| Apple           | ![Apple](https://via.placeholder.com/50) | A red apple      |
-| Banana          | ![Banana](https://via.placeholder.com/50) | A yellow banana  |
-| Cherry          | ![Cherry](https://via.placeholder.com/50) | A red cherry     |
+
 
 ### 🛠 기술 스택
 #
