@@ -36,7 +36,7 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
   
   
   
-  <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> 
+  <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> 
   
   
  
