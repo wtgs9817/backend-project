@@ -15,39 +15,6 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
 김명찬 :
 
 
-### 🛠 기술 스택
-#
-<div align=center> 
-  <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
-  <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> 
-  <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=white">
-  
-  <br>
-  
- 
-  
-  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
-  <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
-  <br>
-  
-  
-
-  <br>
-  
-  
-  
-  <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> 
-  
-  
- 
-  
-  
-  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
-  
-  <br>
-</div>
-
 
 ### 📌 주요 기능 
 #
@@ -66,7 +33,7 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
 
 ### 😅 구현하지 못한 기능
 #
-동작구 강남구 
+
 
 
 ### 💻 개발환경
