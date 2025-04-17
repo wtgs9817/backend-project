@@ -19,7 +19,9 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
 **김명찬** :   지도 API 및 데이터 처리 구현
 
 
+
 ### 🔦 프로젝트 아키텍쳐
+#
 ![부트캠프_프로젝트_아키텍쳐](https://github.com/user-attachments/assets/7c19a46f-69c9-401b-b3e7-1474115c32d8)
 
 
