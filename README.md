@@ -94,12 +94,17 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
 
 - **개발도구**
   - Intellij IDEA (IDE)
+  - HeidiSQL
 
 - **기술 및 라이브러리**
   - MyBatis
   - Lombok
   - JSP
   - Naver Maps API
+  - Java Script
+  - Maria DB
+  - Rest API
+  
 
 - **협업도구**
   - GitHub
