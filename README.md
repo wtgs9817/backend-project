@@ -23,10 +23,29 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
 <br />
 
 
+###  ✍️ 기술스택
+#
+
+### ✔️Front-end
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![JSP](https://img.shields.io/badge/JSP-blue?style=for-the-badge&logo=java&logoColor=white)
+
+### ✔️Back-end
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![MyBatis](https://img.shields.io/badge/MyBatis-0052CC?style=for-the-badge&logo=data&logoColor=white)
+
+### ✔️API
+![REST API](https://img.shields.io/badge/REST_API-000000?style=for-the-badge&logo=api&logoColor=white)
+![Naver Maps](https://img.shields.io/badge/Naver_Maps_API-v3-green?style=for-the-badge&logo=naver&logoColor=white)
+
+
+<br />
+
 ### 🔦 프로젝트 아키텍쳐
 #
 ![부트캠프_프로젝트_아키텍쳐](https://github.com/user-attachments/assets/7c19a46f-69c9-401b-b3e7-1474115c32d8)
-
 
 
 <br />
@@ -47,31 +66,46 @@ Spring Boot를 기반으로 둔 현위치 조회 서비스를 활용한 서울 �
 
 <br />
 
+
+
+### 📖 실행화면
+현위치 기반 주변 음식점 조회 기능
+![image](https://github.com/user-attachments/assets/8c5f6371-1a5e-4a13-ad9d-1caccd718bc3)
+
+<br />
+
+마커 클러스터링 기능 (지도 줌아웃 시 마커 통합)
+![image](https://github.com/user-attachments/assets/fe15b33f-da8c-4dd9-96f0-c5407044767c)
+
+
+
+
+<br />
+
 ### ERD
 ![image](https://github.com/user-attachments/assets/949806f4-bcb4-4807-9c7e-035cd9fc84c9)
 
 <br />
 
-### 😅 프로젝트 후 개선할 사항
+### 😅 다음 프로젝트에 반영할 개선점
 #
-서울 맛집 추천을 목표로 했으나 데이터 부족하여 추천결과가 제한적이었음.
+
+**DB :** 이번 프로젝트에서는 팀장님의 로컬 데이터베이스를 통해 작업을 진행했습니다. 팀장님의 PC가 꺼져 있는 경우 접속이 불가능하여 개발 진행에 어려움이 발생했습니다.
+다음 프로젝트에서는 클라우드 기반의 데이터베이스 서비스를 활용하여 항상 접근 가능한 안정적인 개발 환경을 구성할 계획입니다.
+
 <br />
-**-> 데이터 추가 예정**
+
+**MyBatis -> JPA 전환 :** 이번 프로젝트에서는 MyBatis 를 사용하여 자바 객체와 데이터베이스의 데이터들을 매핑을 처리했습니다. 하지만 Sql 중심적인 개발을 하다보니 자바의 
+객체지향의 강점을 잘 살리지 못해 아쉬움이 남았습니다. 다음 프로젝트에서는 JPA 를 사용하여 자바의 객체지향의 강점을 잘 살려서 개발을 진행하도록 하겠습니다.
+
 <br />
-<br />
-프로젝트를 진행하는 동안 DB서버를 조장님 PC로 운영해왔음. 그러다 보니 PC 사용중이 아닐 때는 프로젝트 진행에 제약이 있었음.
-<br />
-**->DB서버를 클라우드로 이전할 예정**
-<br />
-<br />
-검색기능이 너무 느리다는 지적을 받음. 
-<br />
-**->효율적인 알고리즘으로 개선하여 검색 속도 향상 예정**
-<br />
-<br />
-식당에 대한 정보만 제공되어 객관적인 식당 평가가 어려움.
-<br />
-**->익명 리뷰기능 구현 예정**
+
+**환경 문제 :** 각자 맡은 기능을 개발한 뒤 병합하고 배포하는 과정에서 다른 팀원의 PC에서 충돌이 자주 발생하여 정상적으로 실행되지 않는 문제가 반복되었습니다.
+이로 인해 모든 팀원의 환경에서 안정적으로 프로젝트가 실행되기까지 많은 시간을 소비하였습니다. 이 경험을 통해서 통일된 개발 환경의 중요성을 느꼈습니다.
+다음 프로젝트에서는 Docker와 같은 컨테이너 기반 가상화 기술을 도입하여 환경 차이로 인한 문제를 최소화할 계획입니다.
+
+
+
 
 <br />
 
